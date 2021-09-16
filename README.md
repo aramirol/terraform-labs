@@ -24,3 +24,6 @@ $ brew upgrade && brew install azure-cli
 ## License
 
 MIT License
+
+See [LICENSE](https://github.com/aramirol/terraform-labs/blob/main/LICENSE) to see the full text.
+
