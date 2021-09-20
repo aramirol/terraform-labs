@@ -3,65 +3,34 @@ terraform {
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
-      version = "2.76.0"
+      version = "2.77.0"
     }
   }
 }
 
-provider  "azurerm"{
-    features{
-    }
+provider "azurerm" {
+  # Configuration options
+  features{}
 }
 
-resource "azurerm_resource_group" "example"{
-    name = "example-resource-group"
-    location = "West Europe"
+provider
+resource "azurerm_resource_group" "labs" {
+  name     = labs"
+  location = "West Europe"
 }
 
-resource "azurerm_resource_group" "rg2"{
-    name = "rg2"
-    location = "West Europe"
-    tags = {
-      dependency = azurerm_resource_group.example.name
-    }
-}
+resource "azurerm_virtual_network" "vnet" {
+  name                = "labs_vnet"
+  location            = azurerm_resource_group.labs.location
+  resource_group_name = azurerm_resource_group.labs.name
+  address_space       = ["10.0.0.0/16"]
 
-resource "azurerm_resource_group" "rg3"{
-    name = "rg3"
-    location = "West Europe"
-    depends_on = [
-      azurerm_resource_group.rg2
-    ]
-}
+  subnet {
+    name           = "subnet1"
+    address_prefix = "10.0.1.0/24"
+  }
 
-output "output-example"{
-    value = azurerm_resource_group.example.id
-}
-
-output "output-example-2"{
-    value = azurerm_resource_group.example.name
-}
-
-variable "image_id" {
-  type        = list(string)
-  default = ["abc"]
-}
-
-variable "project-name"{
-  type =
-}
-
-variable "docker_ports"{
-  type = list(object({
-    internal = number
-    external = number
-    protocol = string
-  }))
-  default = [
-    {
-      internal = 5000
-      external = 4000
-      protocol = tcp
-    }
-  ]
+  tags = {
+    environment = "Production"
+  }
 }
