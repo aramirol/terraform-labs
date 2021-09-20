@@ -10,12 +10,10 @@ terraform {
 
 provider "azurerm" {
   # Configuration options
-  features{}
 }
 
-provider
 resource "azurerm_resource_group" "labs" {
-  name     = labs"
+  name     = "labs"
   location = "West Europe"
 }
 
