@@ -10,6 +10,18 @@ In this lab we are going to create the same infrastruture and save tfstate file 
 | Virtual Network    | vnet05   |
 | Subnet    | subnet05    |
 
+After first apply you have to create a `backend.tf` file to save `terraform.tfstate` in Azure:
+
+```sh
+# backend.tf
+terraform {
+    backend "azurerm" {
+    }
+}
+```
+
+Finally, use `terraform init -backend-config` to save the state in Azure.
+
 ## Examples
 
 Firt of all, init the folder:
@@ -25,6 +37,11 @@ $ terraform plan
 To end this lab, apply the code:
 ```sh
 $ terraform apply
+```
+
+Save `terraform.tfstate` in Azure:
+```sh
+$ terraform init -backend-config=backend-config.txt
 ```
 
 ## Be careful!
