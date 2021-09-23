@@ -10,7 +10,7 @@ In this lab we are going to use local modules to create the same infrastruture.
 | Virtual Network    | vnet03   |
 | Subnet    | subnet03    |
 
-## Examples
+## Procedure
 
 Firt of all, init the folder:
 ```sh

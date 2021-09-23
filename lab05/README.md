@@ -22,7 +22,7 @@ terraform {
 
 Finally, use `terraform init -backend-config` to save the state in Azure.
 
-## Examples
+## Procedure
 
 Firt of all, init the folder:
 ```sh

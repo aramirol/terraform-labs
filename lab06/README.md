@@ -10,7 +10,7 @@ In this lab we are going to create the same infrastruture and save tfstate file 
 | Virtual Network    | vnet06   |
 | Subnet    | subnet06    |
 
-## Examples
+## Procedure
 
 Firt of all, init the folder:
 ```sh

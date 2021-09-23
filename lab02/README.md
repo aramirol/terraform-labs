@@ -10,7 +10,7 @@ In this lab we will deploy the same infrastruture as the first lab but using var
 | Virtual Network    | vnet02   |
 | Subnet    | subnet02    |
 
-## Examples
+## Procedure
 
 Firt of all, init the folder:
 ```sh

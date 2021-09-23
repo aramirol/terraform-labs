@@ -10,7 +10,7 @@ Whit this lab you will create:
 | Virtual Network    | vnet01   |
 | Subnet    | subnet01    |
 
-## Examples
+## Procedure
 
 Firt of all, init the folder:
 ```sh

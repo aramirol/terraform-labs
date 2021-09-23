@@ -10,7 +10,7 @@ In this lab we are going to use external modules to create the same infrastrutur
 | Virtual Network    | vnet04   |
 | Subnet    | subnet04    |
 
-## Examples
+## Procedure
 
 Firt of all, init the folder:
 ```sh
