@@ -1,4 +1,0 @@
-storage_account_name = "ms65995"
-container_name = "terraform-state"
-key = "terraform.tfstate"
-sas_token = "?sv=2017-07-29&ss=b&srt=sco&sp=rwdlacu&se=2021-12-03T08:15:51Z&st=2021-09-23T12:15:51Z&spr=https&sig=LYN9aJGoImBoSx5OsQ4%2BxWRsHkAl15Hw86goSq%2BRgZQ%3D"
