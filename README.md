@@ -29,6 +29,7 @@ To install `Azure provider`, copy and paste this code into your Terraform config
 
 ```sh
 terraform {
+  required_version = ">= 0.13"
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
@@ -39,6 +40,7 @@ terraform {
 
 provider "azurerm" {
   # Configuration options
+  features{}
 }
 ```
 
