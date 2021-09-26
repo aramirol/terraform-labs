@@ -1,7 +1,7 @@
 # terraform-labs
 
 ![](https://img.shields.io/badge/terraform-v1.0.6-blueviolet?logo=terraform)
-![](https://img.shields.io/badge/azure-v2.77.0-blue?logo=microsoftazure)
+![](https://img.shields.io/badge/azure-v2.78.0-blue?logo=microsoftazure)
 
 <img src="images/terraform_logo.png" width="30%" />
 
@@ -19,6 +19,26 @@ Since these labs are designed to run on Azure, you must install the `azure cli` 
 
 ```sh
 $ brew upgrade && brew install azure-cli
+```
+
+## Example
+
+To install `Azure provider`, copy and paste this code into your Terraform configuration. Then, run `terraform init`.
+
+```sh
+Terraform 0.13+
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "2.78.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  # Configuration options
+}
 ```
 
 ## License
