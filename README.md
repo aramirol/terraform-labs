@@ -25,8 +25,9 @@ $ brew upgrade && brew install azure-cli
 
 To install `Azure provider`, copy and paste this code into your Terraform configuration. Then, run `terraform init`.
 
+**Terraform 0.13+**
+
 ```sh
-Terraform 0.13+
 terraform {
   required_providers {
     azurerm = {
